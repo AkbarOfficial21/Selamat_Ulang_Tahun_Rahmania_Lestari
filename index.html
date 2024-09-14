@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Selamat Ulang Tahun Rahmania Lestari</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="animate-text"><strong>!!! SELAMAT ULANG TAHUN !!!</strong></h1>
+        <h2 class="animate-text">YANG KE-20</h2>
+        <h2 class="animate-text">Nyai Rahmania Lestari </h2>
+        <p class="animate-text">Sayangku, di hari spesialmu ini, aku ingin mengucapkan selamat ulang tahun dengan penuh cinta. 20 tahun sudah berlalu, dan aku merasa sangat beruntung bisa menjadi bagian dari hidupmu. Semoga di usiamu yang baru ini, kamu semakin bersinar, semakin bahagia, dan semakin dekat dengan semua impianmu.</p>
+        <p class="animate-text">Setiap senyumanmu selalu membuat hariku lebih berwarna, dan aku berharap dapat selalu menjadi seseorang yang membuatmu tersenyum. Aku akan selalu ada di sisimu, mendukung dan mencintaimu dengan sepenuh hati.</p>
+        <p class="animate-text"><strong>LOVE YOU, SAYANG! 🎉🎂❤️</strong></p>
+
+        <!-- Video animasi kue ulang tahun -->
+        <video id="birthdayVideo" controls autoplay loop>
+            <source src="Aset/gvs.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var video = document.getElementById('birthdayVideo');
+            if (video) {
+                video.muted = false; // Pastikan audio tidak dimute
+                video.play().catch(function(error) {
+                    console.log('Autoplay was prevented:', error);
+                    // You can handle fallback here if autoplay is prevented
+                });
+            }
+        });
+    </script>
+</body>
+</html>
